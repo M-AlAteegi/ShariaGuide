@@ -751,7 +751,7 @@ HTML = '''
         <header class="chat-header">
             <div class="model-badge">
                 <span class="dot"></span>
-                <span>Llama 3.1 8B · RAG Enabled</span>
+                <span>llama3.1 8B · RAG Enabled</span>
             </div>
         </header>
 
