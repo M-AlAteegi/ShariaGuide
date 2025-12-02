@@ -87,27 +87,27 @@ ShariaGuide is a **grounded AI assistant** that:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                         USER QUERY                               │
-│                "What are the licensing fees?"                    │
+│                         USER QUERY                              │
+│                "What are the licensing fees?"                   │
 └─────────────────────────┬───────────────────────────────────────┘
                           │
                           ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                    EMBEDDING MODEL                               │
+│                    EMBEDDING MODEL                              │
 │              (all-MiniLM-L6-v2 - 384 dims)                      │
-│                   Query → Vector                                 │
+│                   Query → Vector                                │
 └─────────────────────────┬───────────────────────────────────────┘
                           │
                           ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                      VECTOR DATABASE                             │
-│                       (ChromaDB)                                 │
+│                      VECTOR DATABASE                            │
+│                       (ChromaDB)                                │
 │         Semantic search → Top 3 relevant articles               │
 └─────────────────────────┬───────────────────────────────────────┘
                           │
                           ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                    PROMPT CONSTRUCTION                           │
+│                    PROMPT CONSTRUCTION                          │
 │        Retrieved Articles + Question + Instructions             │
 └─────────────────────────┬───────────────────────────────────────┘
                           │
@@ -119,7 +119,7 @@ ShariaGuide is a **grounded AI assistant** that:
                           │
                           ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                    CITED RESPONSE                                │
+│                    CITED RESPONSE                               │
 │     "According to Article 22, the licensing fees are..."        │
 └─────────────────────────────────────────────────────────────────┘
 ```
